@@ -79,7 +79,8 @@ waste_data_long <- waste_data_fct |>
   pivot_longer(cols = food_organic_waste:yard_garden_green_waste,
                names_to = "waste_category",
                values_to = "percent") |> 
-  filter(!is.na(percent))
+  filter(!is.na(percent)) %>% 
+  view()
 ```
 
 # Part 2: Data summary
